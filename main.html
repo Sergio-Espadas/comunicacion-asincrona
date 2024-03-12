@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATC</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Este será el encabezado de la página que tmabién contendra el menú -->
+    <header>
+      <div class="var">Envío Gratis en pedidos superiores a 35€</div>
+      <nav class="barra__navegacion">
+        <a href="#inicio">
+          <img
+            id="logo"
+            class="var__logo"
+            width="100px"
+            height="100px"
+            src="Imagenes/logo.jpg"
+            alt="No se pudo mostrar la foto"
+          />
+        </a>
+
+        <div class="barra__navegacion__inicio">
+          <a id="init" class="nav-link active" aria-current="page" href="#"
+            >Inicio</a
+          >
+        </div>
+        <div class="barra__navegacion__contacto">Contacto</div>
+        <div class="barra__navegacion__reservas">Reservas</div>
+        <div class="barra__navegacion__nosotros">Nosotros</div>
+        <div class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle show"
+            href="#"
+            id="navCats"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+            >Categorías</a
+          >
+          <ul class="dropdown-menu" data-bs-popper="static"></ul>
+        </div>
+        <div class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle show"
+            href="#"
+            id="navRes"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+            >Restaurantes</a
+          >
+          <ul class="dropdown-menu" data-bs-popper="static"></ul>
+        </div>
+        <div id="language" class="language_select">
+          <ul class="navbar-nav">
+            <li>
+              <a
+                class=""
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  alt="Idioma seleccionado"
+                  src="./Imagenes/languages/es.png"
+                />
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" data-language="es" href="#"
+                    ><img
+                      alt="Idioma español"
+                      src="./Imagenes/languages/es.png"
+                  /></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" data-language="en" href="#"
+                    ><img alt="Idioma inglés" src="./Imagenes/languages/en.png"
+                  /></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" data-language="fr" href="#"
+                    ><img
+                      alt="Idioma francés"
+                      src="./Imagenes/languages/fr.png"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="userArea" class="identifier"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Aquí comienza la zona de información adicional -->
+      <section class="information">
+        <article class="information__var">
+          <p>Pide a tu gusto</p>
+
+          <img
+            width="30px"
+            height="30px"
+            src="./Imagenes/repartidor.png"
+            alt="No se pudo mostrar la foto"
+          />
+
+          <p>a domicilio</p>
+
+          <img
+            width="30px"
+            height="30px"
+            src="./Imagenes/restaurante.png"
+            alt="No se pudo mostrar la foto"
+          />
+
+          <p>o recogelo aquí</p>
+
+          <div class="information__button">Comenzar</div>
+        </article>
+      </section>
+
+      <section class="title">
+        <h1>Que te apetece comer hoy...</h1>
+
+        <div class="tittle__rect">
+          <div class="rect__left"></div>
+          <div class="rect__center"></div>
+          <div class="rect__right"></div>
+        </div>
+      </section>
+
+      <!-- En esta zona tendremos la interacción directa con los platos -->
+
+      <section
+        id="categorias_principal"
+        data-tipo="categorias"
+        class="categories"
+      ></section>
+
+      <section class="title">
+        <div class="tittle__rect">
+          <div class="rect__left"></div>
+          <div class="rect__center"></div>
+          <div class="rect__right"></div>
+        </div>
+      </section>
+
+      <section id="platos" data-tipo="platos" class="platos"></section>
+
+      <!-- Aquí hacemos el footer de la página -->
+      <footer>
+        <section class="pie">
+          <!-- Sobre la comida -->
+          <article>
+            <h1>Nuestra Comida</h1>
+            <p>Lo mas Vendido</p>
+            <p>Promociones</p>
+            <p>Favoritas para compartir</p>
+            <p>Menus de pollo</p>
+            <p>Veggie</p>
+          </article>
+
+          <!-- Sobre Nosotros -->
+          <article>
+            <h1>Sobre Nosotros</h1>
+            <p>Ofertas</p>
+            <p>Cumpleaños</p>
+            <p>Nuestra Historia</p>
+            <p>Bienestar Animal</p>
+            <p>Trabaja con nosotros</p>
+          </article>
+
+          <!-- Alergenos -->
+          <!-- Politicas -->
+          <article>
+            <h1>Nutrición</h1>
+            <p>Alergenos</p>
+            <p>Información Nutricional</p>
+            <h1>Políticas</h1>
+            <p>Política de privacidad</p>
+            <p>Uso de cookies</p>
+          </article>
+
+          <!-- Forma de pago -->
+          <article class="pie__pago">
+            <h1>Metodos de pago</h1>
+            <div class="pago__image">
+              <img
+                width="50px"
+                height="50px"
+                src="Imagenes/visa.png"
+                alt="No se pudo mostrar la foto"
+              />
+
+              <img
+                width="50px"
+                height="50px"
+                src="Imagenes/mastercard.png"
+                alt="No se pudo mostrar la foto"
+              />
+
+              <img
+                width="50px"
+                height="50px"
+                src="Imagenes/paypal.png"
+                alt="No se pudo mostrar la foto"
+              />
+            </div>
+          </article>
+        </section>
+
+        <!-- Redes Sociales -->
+        <section class="social">
+          <article class="social__copyright">
+            <p>©2024 AFC Restaurant Spain. Todos los derechos reservados.</p>
+          </article>
+
+          <article class="social__media">
+            <img
+              width="30px"
+              height="30px"
+              src="Imagenes/facebook.png"
+              alt="No se pudo mostrar la foto"
+            />
+
+            <img
+              width="30px"
+              height="30px"
+              src="Imagenes/gorjeo.png"
+              alt="No se pudo mostrar la foto"
+            />
+
+            <img
+              width="30px"
+              height="30px"
+              src="Imagenes/instagram.png"
+              alt="No se pudo mostrar la foto"
+            />
+
+            <img
+              width="30px"
+              height="30px"
+              src="Imagenes/whatsapp.png"
+              alt="No se pudo mostrar la foto"
+            />
+
+            <img
+              width="30px"
+              height="30px"
+              src="Imagenes/youtube.png"
+              alt="No se pudo mostrar la foto"
+            />
+
+            <img
+              width="30px"
+              height="30px"
+              src="Imagenes/tik-tok.png"
+              alt="No se pudo mostrar la foto"
+            />
+          </article>
+        </section>
+      </footer>
+
+      <div
+        class="modal fade"
+        id="messageModal"
+        data-bs-backdrop="static"
+        databs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="messageModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialogscrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="messageModalTitle">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/miRestaurant.js"></script>
+  </body>
+</html>

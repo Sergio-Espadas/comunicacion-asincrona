@@ -1,0 +1,139 @@
+{
+  "platos": [
+    {
+      "nombre": "Italiana",
+      "descripcion": "Hamburguesa italiana",
+      "ingredientes": ["italiana", "Tomate"],
+      "url_imagen": "URL_italiana_Con_Tomate"
+    },
+    {
+      "nombre": "Smash",
+      "descripcion": "Hamburguesa smash",
+      "ingredientes": ["smash", "Tomate"],
+      "url_imagen": "URL_smash_Con_Tomate"
+    },
+    {
+      "nombre": "Vegetariana",
+      "descripcion": "Hamburguesa vegetal",
+      "ingredientes": ["vegetal", "Tomate"],
+      "url_imagen": "URL_vegetal_Con_Tomate"
+    },
+    {
+      "nombre": "Barbacoa",
+      "descripcion": "Hamburguesa barbacoa",
+      "ingredientes": ["barbacoa", "Tomate"],
+      "url_imagen": "URL_barbacoa_Con_Tomate"
+    },
+    {
+      "nombre": "Chocolate",
+      "descripcion": "Helado de chocolate",
+      "ingredientes": ["chocolate", "Salsa"],
+      "url_imagen": "URL_chocolate_En_Salsa"
+    },
+    {
+      "nombre": "Vainilla",
+      "descripcion": "Helado de vainilla",
+      "ingredientes": ["vainilla", "Salsa"],
+      "url_imagen": "URL_vainilla_En_Salsa"
+    },
+    {
+      "nombre": "Nata",
+      "descripcion": "Helado de nata",
+      "ingredientes": ["nata", "Salsa"],
+      "url_imagen": "URL_nata_En_Salsa"
+    },
+    {
+      "nombre": "Pistacho",
+      "descripcion": "Helado de pistacho",
+      "ingredientes": ["pistacho", "Salsa"],
+      "url_imagen": "URL_pistacho_En_Salsa"
+    },
+    {
+      "nombre": "Pollo",
+      "descripcion": "Brocheta de pollo",
+      "ingredientes": ["pollo", "Salsa"],
+      "url_imagen": "URL_pollo_En_Salsa"
+    },
+    {
+      "nombre": "Ternera",
+      "descripcion": "Brocheta de ternera",
+      "ingredientes": ["ternera", "Salsa"],
+      "url_imagen": "URL_ternera_En_Salsa"
+    },
+    {
+      "nombre": "Vegetal",
+      "descripcion": "Brocheta vegetal",
+      "ingredientes": ["vegetal", "Salsa"],
+      "url_imagen": "URL_vegetal_En_Salsa"
+    },
+    {
+      "nombre": "Mixto",
+      "descripcion": "Brocheta mixta",
+      "ingredientes": ["mixto", "Salsa"],
+      "url_imagen": "URL_mixto_En_Salsa"
+    }
+  ],
+  "categorias": [
+    {
+      "nombre": "Brochetas",
+      "descripcion": "Pimiento, cebolla y carne..."
+    },
+    {
+      "nombre": "Hamburguesas",
+      "descripcion": "Jugosas y al punto"
+    },
+    {
+      "nombre": "Helados",
+      "descripcion": "Helados Naturales"
+    }
+  ],
+  "alergenos": [
+    {
+      "nombre": "Gluten",
+      "descripcion": "Las hamburguesas contiene gluten"
+    },
+    {
+      "nombre": "Lactosa",
+      "descripcion": "La salsa contiene leche"
+    },
+    {
+      "nombre": "Frutos Secos",
+      "descripcion": "La brochetas contiene trazas de frutos secos"
+    },
+    {
+      "nombre": "Platanos",
+      "descripcion": "La salsa puede contener trazas de platano"
+    }
+  ],
+  "menus": [
+    {
+      "nombre": "Menu Hamburguesas",
+      "descripcion": "Menu diario del restaurante"
+    },
+    {
+      "nombre": "Menu Brochetas",
+      "descripcion": "Menu diario del restaurante"
+    },
+    {
+      "nombre": "Menu Helados",
+      "descripcion": "Menu diario del restaurante"
+    }
+  ],
+  "restaurantes": [
+    {
+      "nombre": "La cocina de Sergio",
+      "tipo": "Restaurante tradicional",
+      "coordenadas": { "latitud": 40.7128, "longitud": -74.006 }
+    },
+    {
+      "nombre": "La cocina Gourmet",
+      "tipo": "Restaurante de calidad mundial",
+      "coordenadas": { "latitud": 40.7128, "longitud": -74.006 }
+    },
+    {
+      "nombre": "La cocina del Tenedor",
+      "tipo": "Restaurante de estrella michelin",
+      "coordenadas": { "latitud": 40.7128, "longitud": -74.006 }
+    }
+  ]
+}
